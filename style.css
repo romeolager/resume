@@ -39,3 +39,43 @@ body{
     float: left;
     font-weight: 900;
 }
+.profile{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+    border: 3px solid var(--font-color);
+    margin-top: 15px;
+}
+.content{padding: 0px;}
+h1{
+    color: var(--font-color);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p{
+    color: var(--font-color);
+    font-weight: 300;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ul:before{
+    content: "";
+    display:inline-block;
+    width : 2px;
+    background: #47494f2b;
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    height: calc(100% - 10px);
+}
+ul li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
