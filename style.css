@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 *{font-family:'Nunito', sans-serif;}
 :root{
-    --font-color:#474950;
-    --second-color:#a9a7b1;
+    --font-color:#4e4750;
+    --second-color:#a8a7b1;
 }
 body{
     margin: 0px;
     padding: 0px;
     background: linear-gradient(178deg, #482feb, #9824ff);
-    height: 150vh;
+    height: 130vh;
 }
 .clearfix{clear: both;}
 .resume-box{
     width: 800px;
-    height: 1200px;
+    height: 1100px;
     padding: 50px;
     margin: 0 auto;
     background-color:white;
@@ -72,10 +72,65 @@ ul:before{
     position: absolute;
     left: 3px;
     top: 5px;
-    height: calc(100% - 10px);
+    height: calc(95% - 10px);
 }
 ul li{
     position: relative;
     padding-left: 30px;
     margin-bottom: 15px;
+}
+ul li:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--second-color);
+    position: absolute;
+    left: -1px;
+    top: 5px;
+    border-radius: 10px;
+}
+
+#progress, #progress1, #progress2, #progress3{
+    background: #47494f00;
+    height: 5px;
+    width: 100%;
+    border: 1px solid #c0c1c3;
+}
+#progress::after, #progress1::after, #progress2::after, #progress3::after{
+    content: '';
+    display: block;
+    background: var(--second-color);
+    height: 100%;
+}
+#progress:after{width: 50%;}
+#progress1:after{width: 40%;}
+#progress2:after{width: 80%;}
+#progress3:after{width: 90%;}
+.col-sm-6{
+    width: 50%; float: left;
+}
+.head{
+    color: var(--font-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.para-1{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    margin: 5px 0px;
+    margin-top: 10px;
+}
+.para-2{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--second-color);
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
